@@ -1,0 +1,24 @@
+{
+  "name": "weather-cli-app",
+  "version": "1.0.0",
+  "description": "CLI for monitoring weather",
+  "main": "weather.js",
+  "type": "module",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weather",
+    "cli",
+    "monitoring"
+  ],
+  "author": "Oleh Matyiokin",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "dedent": "^1.5.3"
+  }
+}
