@@ -21,4 +21,19 @@ const printHelp = () => {
   );
 };
 
-export { printError, printSuccess, printHelp };
+const printWeather = (weatherData, icon = "") => {
+  const { name, main, weather, wind } = weatherData;
+  const { temp, feels_like, pressure, humidity } = main;
+  const { main: mainDescription } = weather[0];
+  console.log(
+    dedent(`${chalk.bgMagenta(" WEATHER ")} Weather in city ${name}
+    ${icon}  ${mainDescription}
+    Temperature: ${temp} C (feels like ${feels_like} C)
+    Humidity: ${humidity} %
+    Pressure: ${pressure} hPa
+    Wind speed: ${wind.speed} m/s
+    `)
+  );
+};
+
+export { printError, printSuccess, printHelp, printWeather };
