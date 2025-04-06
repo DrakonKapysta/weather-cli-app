@@ -25,13 +25,14 @@ cd weather-cli
 npm install
 ```
 
-## 🛠️ Usage
+## 🚀 Usage
 
 Before you can start fetching weather data, you'll need to set your API key from OpenWeatherMap and the city. To do that, run:
 
 ```
 node weather.js -s [city] -t [API key]
 ```
+
 Replace [city] with the desired city name and [API key] with your OpenWeatherMap API key.
 
 If you want to change the city or API key in the future, use the available options like this:
@@ -39,14 +40,15 @@ If you want to change the city or API key in the future, use the available optio
 ```
 node weather.js [options]
 ```
+
 ### Available Options:
 
-| Option                   | Description                         |
-|--------------------------|-------------------------------------|
-| `weather`                | Show weather in the saved city      |
-| `weather -s [city]`      | Save city to get weather            |
-| `weather -t [API key]`   | Save your OpenWeatherMap API key    |
-| `weather -h`             | Show help info                      |
+| Option                 | Description                      |
+| ---------------------- | -------------------------------- |
+| `weather`              | Show weather in the saved city   |
+| `weather -s [city]`    | Save city to get weather         |
+| `weather -t [API key]` | Save your OpenWeatherMap API key |
+| `weather -h`           | Show help info                   |
 
 > **Note:** You only need to use the `-s` and `-t` flags once to set the city and API key. After that, you can just run `node weather.js` to check the weather.
 
